@@ -1,0 +1,25 @@
+{
+  "name": "graphql-users-small-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaan-jonker/GraphQL-Users-Small-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiaan-jonker/GraphQL-Users-Small-App/issues"
+  },
+  "homepage": "https://github.com/tiaan-jonker/GraphQL-Users-Small-App#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "lodash": "^4.17.21"
+  }
+}
