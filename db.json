@@ -1,12 +1,33 @@
 {
   "users": [
-    { "id": "23", "firstName": "Bob", "age": 20, "companyId": "1" },
-    { "id": "47", "firstName": "Gill", "age": 30, "companyId": "2" },
-    { "id": "69", "firstName": "Bill", "age": 40, "companyId": "2" }
+    {
+      "id": "47",
+      "firstName": "Gill",
+      "age": 30,
+      "companyId": "2"
+    },
+    {
+      "id": "69",
+      "firstName": "Sam",
+      "age": "100",
+      "companyId": "2"
+    }
   ],
   "companies": [
-    { "id": "1", "name": "Google", "description": "Tech" },
-    { "id": "2", "name": "Microsoft", "description": "Tech" },
-    { "id": "3", "name": "Apple", "description": "Tech" }
+    {
+      "id": "1",
+      "name": "Google",
+      "description": "Tech"
+    },
+    {
+      "id": "2",
+      "name": "Microsoft",
+      "description": "Tech"
+    },
+    {
+      "id": "3",
+      "name": "Apple",
+      "description": "Tech"
+    }
   ]
 }
