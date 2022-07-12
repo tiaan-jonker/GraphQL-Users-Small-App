@@ -47,14 +47,21 @@ const CompanyType = new GraphQLObjectType({
   }),
 })
 
-// Ex query structure: 
+// Ex query structure:
 /*
 query fetchCompany {
-  company(id: "1") {
-    id
-    name
-    description
+  google: company(id: "1") {
+    ...companyDetails
   }
+  microsoft: company(id: "1") {
+    ...companyDetails
+  }
+}
+
+fragment companyDetails on Company {
+  id
+  name
+  description
 }
 */
 
@@ -74,6 +81,24 @@ const UserType = new GraphQLObjectType({
     },
   }),
 })
+
+// Ex query structure:
+/*
+query fetchCompany {
+  one: user(id: "23") {
+    ...userDetails
+  }
+  two: user(id: "47") {
+    ...userDetails
+  }
+}
+
+fragment userDetails on User {
+  id
+  firstName
+  age
+}
+*/
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
